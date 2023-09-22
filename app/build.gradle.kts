@@ -52,6 +52,8 @@ dependencies {
 
     val androidxComposeVersion = "1.7.2"
     val androidxCoreVersion = "1.12.0"
+    val androidxDatastore = "1.0.0"
+    val coroutinesVersion = "1.6.4"
     val hiltVersion = "2.44"
     val junitVersion = "4.13.2"
     val lifecycleRuntimeVersion = "2.6.2"
@@ -81,6 +83,10 @@ dependencies {
 
     implementation("com.google.dagger:hilt-android:$hiltVersion")
     kapt("com.google.dagger:hilt-android-compiler:$hiltVersion")
+
+    implementation("androidx.datastore:datastore:$androidxDatastore")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion")
 }
 
 kapt {
