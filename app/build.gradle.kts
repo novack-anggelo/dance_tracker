@@ -54,6 +54,7 @@ dependencies {
     val androidxCoreVersion = "1.12.0"
     val androidxDatastore = "1.0.0"
     val coroutinesVersion = "1.6.4"
+    val datastoreVersion = "1.0.0"
     val hiltVersion = "2.44"
     val junitVersion = "4.13.2"
     val lifecycleRuntimeVersion = "2.6.2"
@@ -87,6 +88,9 @@ dependencies {
     implementation("androidx.datastore:datastore:$androidxDatastore")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion")
+
+    implementation("androidx.datastore:datastore-core:$datastoreVersion")
+    implementation("androidx.datastore:datastore-preferences:$datastoreVersion")
 }
 
 kapt {
