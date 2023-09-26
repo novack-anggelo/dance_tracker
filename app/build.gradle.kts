@@ -1,3 +1,6 @@
+
+import com.novack.dance_tracker.DanceTrackerBuildType
+
 plugins {
     id("dance_tracker.android.application")
     id("dance_tracker.android.application.compose")
