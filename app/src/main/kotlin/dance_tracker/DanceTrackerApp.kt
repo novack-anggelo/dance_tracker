@@ -1,4 +1,4 @@
-package com.novack.dance_tracker
+package dance_tracker
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

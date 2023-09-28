@@ -1,4 +1,4 @@
-package com.novack.dance_tracker.common.data
+package dance_tracker.common.data
 
 import android.util.Log
 import androidx.datastore.core.DataStore

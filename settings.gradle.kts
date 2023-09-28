@@ -16,3 +16,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "dance_tracker"
 include(":app")
+
+include(":core")
+include(":core:design_system")
