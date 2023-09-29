@@ -1,4 +1,4 @@
-package com.novack.dance_tracker.ui.theme
+package com.novack.dance_tracker.core.design_system.theme
 
 import android.app.Activity
 import android.os.Build
