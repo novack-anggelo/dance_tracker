@@ -29,6 +29,7 @@
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/core/datastore" />
             <option value="$PROJECT_DIR$/core/design_system" />
+            <option value="$PROJECT_DIR$/core/ui" />
           </set>
         </option>
       </GradleProjectSettings>
