@@ -5,10 +5,12 @@ buildscript {
         mavenCentral()
 
         // Android Build Server
-        //maven { url = uri("../nowinandroid-prebuilts/m2repository") }
+        maven { url = uri("../nowinandroid-prebuilts/m2repository") }
     }
     dependencies {
-        classpath(libs.kotlin.gradlePlugin)
+        classpath(libs.google.oss.licenses.plugin) {
+            exclude(group = "com.google.protobuf")
+        }
     }
 }
 
