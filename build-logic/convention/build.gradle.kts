@@ -44,10 +44,10 @@ gradlePlugin {
             id = "dance_tracker.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
-        /*register("androidFeature") {
+        register("androidFeature") {
             id = "dance_tracker.android.feature"
             implementationClass = "AndroidFeatureConventionPlugin"
-        }*/
+        }
         register("androidTest") {
             id = "dance_tracker.android.test"
             implementationClass = "AndroidTestConventionPlugin"
