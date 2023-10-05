@@ -8,6 +8,5 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.activity.compose)
     implementation(libs.accompanist.permissions)
 }

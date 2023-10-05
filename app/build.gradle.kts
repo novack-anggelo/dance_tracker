@@ -57,4 +57,6 @@ dependencies {
     implementation(libs.androidx.profileinstaller)
 
     implementation(project(":core:design_system"))
+
+    implementation(project(":feature:onboarding"))
 }

@@ -25,6 +25,7 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
                 add("testImplementation", kotlin("test"))
                 add("androidTestImplementation", kotlin("test"))
 
+                // Here we're accessing the compose navigation library
                 add("implementation", libs.findLibrary("androidx.hilt.navigation.compose").get())
                 add("implementation", libs.findLibrary("androidx.lifecycle.runtimeCompose").get())
                 add("implementation", libs.findLibrary("androidx.lifecycle.viewModelCompose").get())
