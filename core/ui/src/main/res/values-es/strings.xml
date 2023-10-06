@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ONBOARDING_WELCOME_HEADER">Bienvenido a esta demo de Dance tracker!</string>
+    <string name="ONBOARDING_FEATURES_TRAINING_TRACK">Tus horas y tipos de entrenamientos</string>
+    <string name="ONBOARDING_FEATURES_HEADER">Mantén seguimiento de:</string>
+    <string name="ONBOARDING_FEATURES_CLASSES">Las clases que estás tomando</string>
+    <string name="ONBOARDING_FEATURES_SOCIALS">El tiempo que estás invitiendo en socials para mejorar! 🙈</string>
+    <string name="ONBOARDING_TODO">Y muchas otras cosas pero me da pereza explicarlo acá</string>
+</resources>

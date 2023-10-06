@@ -1,3 +1,9 @@
 <resources>
 
+    <string name="ONBOARDING_WELCOME_HEADER">Welcome to this Dance tracker demo!</string>
+    <string name="ONBOARDING_FEATURES_TRAINING_TRACK">Your training hours and types</string>
+    <string name="ONBOARDING_FEATURES_HEADER">Keep track of:</string>
+    <string name="ONBOARDING_FEATURES_CLASSES">Classes you\'re taking</string>
+    <string name="ONBOARDING_FEATURES_SOCIALS">The time you\'re spending improving in socials 🙈</string>
+    <string name="ONBOARDING_TODO">And a lot more of stuff that I\'m to lazy to explain here</string>
 </resources>
