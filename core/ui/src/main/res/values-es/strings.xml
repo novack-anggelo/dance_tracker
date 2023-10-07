@@ -7,4 +7,5 @@
     <string name="ONBOARDING_FEATURES_CLASSES">Las clases que estás tomando</string>
     <string name="ONBOARDING_FEATURES_SOCIALS">El tiempo que estás invitiendo en socials para mejorar! 🙈</string>
     <string name="ONBOARDING_TODO">Y muchas otras cosas pero me da pereza explicarlo acá</string>
+    <string name="ONBOARDING_LADING_CTA">Vamos!</string>
 </resources>
