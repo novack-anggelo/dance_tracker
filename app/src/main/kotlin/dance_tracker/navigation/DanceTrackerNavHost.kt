@@ -20,6 +20,7 @@ fun DanceTrackerNavHost(
         modifier = modifier
     ) {
         onboardingGraph(
+            onLandingNextClick = {},
             nestedGraphs = {
 
             }
