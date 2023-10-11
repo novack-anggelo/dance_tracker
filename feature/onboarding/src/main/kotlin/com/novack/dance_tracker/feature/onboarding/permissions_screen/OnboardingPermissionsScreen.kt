@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.ElevatedCard
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -68,9 +69,9 @@ private fun PermissionsRationalView(onRetryPermissions: () -> Unit, onSkip: () -
             .fillMaxWidth()
         ) {
             Column {
-                Text(text = stringResource(id = R.string.ONBOARDING_PERMISSIONS_POST_NOTIFICATIONS_TITLE))
-                Text(text = stringResource(id = R.string.ONBOARDING_PERMISSIONS_POST_NOTIFICATIONS_TYPE))
-                Text(text = stringResource(id = R.string.ONBOARDING_PERMISSIONS_POST_NOTIFICATIONS_BODY))
+                Text(text = stringResource(id = R.string.ONBOARDING_PERMISSIONS_POST_NOTIFICATIONS_TITLE), style = MaterialTheme.typography.headlineSmall)
+                Text(text = stringResource(id = R.string.ONBOARDING_PERMISSIONS_POST_NOTIFICATIONS_TYPE), style = MaterialTheme.typography.titleSmall)
+                Text(text = stringResource(id = R.string.ONBOARDING_PERMISSIONS_POST_NOTIFICATIONS_BODY), style = MaterialTheme.typography.bodyMedium)
             }
         }
         Row(modifier = Modifier.fillMaxWidth()) {
