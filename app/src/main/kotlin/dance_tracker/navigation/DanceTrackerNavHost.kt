@@ -6,6 +6,8 @@ import androidx.navigation.compose.NavHost
 import com.novack.dance_tracker.feature.onboarding.landing_screen.navigation.onboardingLandingRoute
 import com.novack.dance_tracker.feature.onboarding.landing_screen.navigation.onboardingLandingScreen
 import com.novack.dance_tracker.feature.onboarding.navigation.onboardingGraph
+import com.novack.dance_tracker.feature.onboarding.permissions_screen.navigation.navigateToOnboardingPermissions
+import com.novack.dance_tracker.feature.onboarding.permissions_screen.navigation.onboardingPermissionsScreen
 import dance_tracker.ui.DanceTrackerAppState
 
 @Composable
@@ -22,11 +24,11 @@ fun DanceTrackerNavHost(
         modifier = modifier
     ) {
         // TODO
-        onboardingLandingScreen {  }
+        onboardingLandingScreen(onNextClick = navController::navigateToOnboardingPermissions)
         onboardingGraph(
-            onLandingNextClick = {},
+            onLandingNextClick = navController::navigateToOnboardingPermissions,
             nestedGraphs = {
-
+                onboardingPermissionsScreen {  }
             }
         )
     }

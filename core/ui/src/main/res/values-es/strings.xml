@@ -8,4 +8,9 @@
     <string name="ONBOARDING_FEATURES_SOCIALS">El tiempo que estás invitiendo en socials para mejorar! 🙈</string>
     <string name="ONBOARDING_TODO">Y muchas otras cosas pero me da pereza explicarlo acá</string>
     <string name="ONBOARDING_LADING_CTA">Vamos!</string>
+    <string name="ONBOARDING_PERMISSIONS_POST_NOTIFICATIONS_TITLE">Notificaciones Post</string>
+    <string name="ONBOARDING_PERMISSIONS_POST_NOTIFICATIONS_TYPE">Opcional</string>
+    <string name="ONBOARDING_PERMISSIONS_POST_NOTIFICATIONS_BODY">Las notificationes Post nos ayudan a tenerte actualizado con información útil</string>
+    <string name="ONBOARDING_PERMISSIONS_SKIP_CTA">Saltar</string>
+    <string name="ONBOARDING_PERMISSIONS_REVIEW_PERMISSIONS_CTA">Revisar permisos</string>
 </resources>
