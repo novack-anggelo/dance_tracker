@@ -39,6 +39,10 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
+    kapt {
+        correctErrorTypes = true
+    }
 }
 
 dependencies {
@@ -56,7 +60,9 @@ dependencies {
     implementation(libs.androidx.window.manager)
     implementation(libs.androidx.profileinstaller)
 
+    implementation(project(":core:datastore"))
     implementation(project(":core:design_system"))
+    implementation(project(":core:ui"))
 
     implementation(project(":feature:onboarding"))
 }

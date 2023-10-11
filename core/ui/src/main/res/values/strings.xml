@@ -7,4 +7,9 @@
     <string name="ONBOARDING_FEATURES_SOCIALS">The time you\'re spending improving in socials 🙈</string>
     <string name="ONBOARDING_TODO">And a lot more of stuff that I\'m to lazy to explain here</string>
     <string name="ONBOARDING_LADING_CTA">Let\'s go!</string>
+    <string name="ONBOARDING_PERMISSIONS_POST_NOTIFICATIONS_TITLE">Post notifications</string>
+    <string name="ONBOARDING_PERMISSIONS_POST_NOTIFICATIONS_TYPE">Optional</string>
+    <string name="ONBOARDING_PERMISSIONS_POST_NOTIFICATIONS_BODY">Post notifications help us to keep you up to date with useful information</string>
+    <string name="ONBOARDING_PERMISSIONS_SKIP_CTA">Skip</string>
+    <string name="ONBOARDING_PERMISSIONS_REVIEW_PERMISSIONS_CTA">Review permissions</string>
 </resources>
