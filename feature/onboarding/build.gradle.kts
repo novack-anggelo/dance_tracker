@@ -9,4 +9,5 @@ android {
 
 dependencies {
     implementation(libs.accompanist.permissions)
+    implementation(libs.kotlinx.datetime)
 }

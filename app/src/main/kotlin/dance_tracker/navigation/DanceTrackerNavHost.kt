@@ -8,6 +8,8 @@ import com.novack.dance_tracker.feature.onboarding.landing_screen.navigation.onb
 import com.novack.dance_tracker.feature.onboarding.navigation.onboardingGraph
 import com.novack.dance_tracker.feature.onboarding.permissions_screen.navigation.navigateToOnboardingPermissions
 import com.novack.dance_tracker.feature.onboarding.permissions_screen.navigation.onboardingPermissionsScreen
+import com.novack.dance_tracker.feature.onboarding.user_basic_info.navigation.navigateToOnboardingUserBasicInfoScreen
+import com.novack.dance_tracker.feature.onboarding.user_basic_info.navigation.onboardingUserBasicInfoScreen
 import dance_tracker.ui.DanceTrackerAppState
 
 @Composable
@@ -27,8 +29,10 @@ fun DanceTrackerNavHost(
         onboardingLandingScreen(onNextClick = navController::navigateToOnboardingPermissions)
         onboardingGraph(
             onLandingNextClick = navController::navigateToOnboardingPermissions,
+            // TODO as onboarding is a separated feature I think this nested graph structure should be defined in that module, not here
             nestedGraphs = {
-                onboardingPermissionsScreen {  }
+                onboardingPermissionsScreen(onNextClick = navController::navigateToOnboardingUserBasicInfoScreen)
+                onboardingUserBasicInfoScreen {  }
             }
         )
     }

@@ -20,6 +20,7 @@ include(":app")
 include(":core")
 include(":core:datastore")
 include(":core:design_system")
+include(":core:model")
 include(":core:ui")
 
 include("feature:onboarding")
