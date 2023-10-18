@@ -14,7 +14,7 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
             /*extensions.configure<LibraryExtension> {
                 defaultConfig {
                     testInstrumentationRunner =
-                        "com.novack.nowinandroid.core.testing.TestRunner"
+                        "com.novack.dance_tracker.core.testing.TestRunner"
                 }
             }*/
 
