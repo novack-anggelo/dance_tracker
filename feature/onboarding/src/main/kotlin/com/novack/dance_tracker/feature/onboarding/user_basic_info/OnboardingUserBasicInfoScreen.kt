@@ -37,6 +37,7 @@ internal fun OnboardingUserBasicInfoRoute(
     viewModel: OnboardingUserBasicInfoViewModel = hiltViewModel()
 ) {
     val fieldsState = viewModel.fieldsState.collectAsStateWithLifecycle().value
+    //val validationsState = viewModel.
 
     OnboardingUserBasicInfoScreen(
         fieldsState = fieldsState,

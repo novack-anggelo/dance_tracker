@@ -10,4 +10,7 @@ android {
 dependencies {
     implementation(libs.accompanist.permissions)
     implementation(libs.kotlinx.datetime)
+
+    // TODO this should be in a convention plugin
+    testImplementation(libs.mockk)
 }

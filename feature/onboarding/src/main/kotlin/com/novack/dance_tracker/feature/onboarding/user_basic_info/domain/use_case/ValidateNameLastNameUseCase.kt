@@ -24,8 +24,8 @@ class ValidateNameLastNameUseCase @Inject constructor() {
         data object Success : DtResult
 
         sealed interface Error : DtResult {
-            data object ErrorLength : DtResult
-            data object ErrorCharacters : DtResult
+            data object ErrorLength : Error
+            data object ErrorCharacters : Error
         }
     }
 }
