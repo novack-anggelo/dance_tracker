@@ -1,4 +1,4 @@
-package dance_tracker.navigation
+package com.novack.dance_tracker.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -10,7 +10,7 @@ import com.novack.dance_tracker.feature.onboarding.permissions_screen.navigation
 import com.novack.dance_tracker.feature.onboarding.permissions_screen.navigation.onboardingPermissionsScreen
 import com.novack.dance_tracker.feature.onboarding.user_basic_info.navigation.navigateToOnboardingUserBasicInfoScreen
 import com.novack.dance_tracker.feature.onboarding.user_basic_info.navigation.onboardingUserBasicInfoScreen
-import dance_tracker.ui.DanceTrackerAppState
+import com.novack.dance_tracker.ui.DanceTrackerAppState
 
 @Composable
 fun DanceTrackerNavHost(

@@ -1,4 +1,4 @@
-package dance_tracker.ui
+package com.novack.dance_tracker.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember

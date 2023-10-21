@@ -26,6 +26,8 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
                 add("testImplementation", kotlin("test"))
                 add("androidTestImplementation", kotlin("test"))
                 add("testImplementation", libs.findLibrary("mockk").get())
+                add("testImplementation", libs.findLibrary("kotlinx-coroutines-test").get())
+                add("testImplementation", project(":core:testing"))
 
                 // Here we're accessing the compose navigation library
                 add("implementation", libs.findLibrary("androidx.hilt.navigation.compose").get())
