@@ -14,16 +14,20 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
             /*extensions.configure<LibraryExtension> {
                 defaultConfig {
                     testInstrumentationRunner =
-                        "com.novack.nowinandroid.core.testing.TestRunner"
+                        "com.novack.dance_tracker.core.testing.TestRunner"
                 }
             }*/
 
             dependencies {
                 add("implementation", project(":core:ui"))
                 add("implementation", project(":core:design_system"))
+                add("implementation", project(":core:model"))
 
                 add("testImplementation", kotlin("test"))
                 add("androidTestImplementation", kotlin("test"))
+                add("testImplementation", libs.findLibrary("mockk").get())
+                add("testImplementation", libs.findLibrary("kotlinx-coroutines-test").get())
+                add("testImplementation", project(":core:testing"))
 
                 // Here we're accessing the compose navigation library
                 add("implementation", libs.findLibrary("androidx.hilt.navigation.compose").get())

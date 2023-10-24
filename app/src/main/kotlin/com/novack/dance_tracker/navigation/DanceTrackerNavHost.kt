@@ -1,4 +1,4 @@
-package dance_tracker.navigation
+package com.novack.dance_tracker.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -8,7 +8,9 @@ import com.novack.dance_tracker.feature.onboarding.landing_screen.navigation.onb
 import com.novack.dance_tracker.feature.onboarding.navigation.onboardingGraph
 import com.novack.dance_tracker.feature.onboarding.permissions_screen.navigation.navigateToOnboardingPermissions
 import com.novack.dance_tracker.feature.onboarding.permissions_screen.navigation.onboardingPermissionsScreen
-import dance_tracker.ui.DanceTrackerAppState
+import com.novack.dance_tracker.feature.onboarding.user_basic_info.navigation.navigateToOnboardingUserBasicInfoScreen
+import com.novack.dance_tracker.feature.onboarding.user_basic_info.navigation.onboardingUserBasicInfoScreen
+import com.novack.dance_tracker.ui.DanceTrackerAppState
 
 @Composable
 fun DanceTrackerNavHost(
@@ -27,8 +29,10 @@ fun DanceTrackerNavHost(
         onboardingLandingScreen(onNextClick = navController::navigateToOnboardingPermissions)
         onboardingGraph(
             onLandingNextClick = navController::navigateToOnboardingPermissions,
+            // TODO as onboarding is a separated feature I think this nested graph structure should be defined in that module, not here
             nestedGraphs = {
-                onboardingPermissionsScreen {  }
+                onboardingPermissionsScreen(onNextClick = navController::navigateToOnboardingUserBasicInfoScreen)
+                onboardingUserBasicInfoScreen {  }
             }
         )
     }

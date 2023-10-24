@@ -18,8 +18,11 @@ rootProject.name = "dance_tracker"
 include(":app")
 
 include(":core")
+include(":core:common")
 include(":core:datastore")
 include(":core:design_system")
+include(":core:model")
 include(":core:ui")
+include(":core:testing")
 
 include("feature:onboarding")

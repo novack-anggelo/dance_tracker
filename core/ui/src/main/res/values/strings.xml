@@ -12,4 +12,16 @@
     <string name="ONBOARDING_PERMISSIONS_POST_NOTIFICATIONS_BODY">Post notifications help us to keep you up to date with useful information</string>
     <string name="ONBOARDING_PERMISSIONS_SKIP_CTA">Skip</string>
     <string name="ONBOARDING_PERMISSIONS_REVIEW_PERMISSIONS_CTA">Review permissions</string>
+    <string name="OPEN_CALENDAR_CTA_DESCRIPTION">Open calendar</string>
+    <string name="ACCEPT">accept</string>
+    <string name="GENDER_MASCULINE">masculine</string>
+    <string name="GENDER_FEMININE">feminine</string>
+    <string name="ONBOARDING_EXPAND_GENDER_SELECTION_CTA_DESCRIPTION">expand gender selection</string>
+    <string name="NEXT">Next</string>
+    <string name="NAME">name</string>
+    <string name="LAST_NAME">last name</string>
+    <string name="DOB">date of birth</string>
+    <string name="GENDER">gender</string>
+    <string name="ONBOARDING_USER_INFO_LENGTH_ERROR">must contain between %d and %d characters</string>
+    <string name="ONBOARDING_USER_INFO_CHARACTERS_ERROR">can only contain alphabetical characters and single spaces</string>
 </resources>

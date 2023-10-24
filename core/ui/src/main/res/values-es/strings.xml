@@ -13,4 +13,16 @@
     <string name="ONBOARDING_PERMISSIONS_POST_NOTIFICATIONS_BODY">Las notificationes Post nos ayudan a tenerte actualizado con información útil</string>
     <string name="ONBOARDING_PERMISSIONS_SKIP_CTA">Saltar</string>
     <string name="ONBOARDING_PERMISSIONS_REVIEW_PERMISSIONS_CTA">Revisar permisos</string>
+    <string name="OPEN_CALENDAR_CTA_DESCRIPTION">Abrir calendario</string>
+    <string name="ACCEPT">aceptar</string>
+    <string name="GENDER_MASCULINE">masculino</string>
+    <string name="GENDER_FEMININE">femenino</string>
+    <string name="ONBOARDING_EXPAND_GENDER_SELECTION_CTA_DESCRIPTION">expandir lista de selección de género</string>
+    <string name="NEXT">Siguiente</string>
+    <string name="NAME">nombre</string>
+    <string name="LAST_NAME">apellido</string>
+    <string name="DOB">fecha de nacimiento</string>
+    <string name="GENDER">género</string>
+    <string name="ONBOARDING_USER_INFO_LENGTH_ERROR">debe tener entre %d y %d caracteres</string>
+    <string name="ONBOARDING_USER_INFO_CHARACTERS_ERROR">debe contener solo caracteres alfabéticos y espacios simples</string>
 </resources>

@@ -1,11 +1,11 @@
-package dance_tracker
+package com.novack.dance_tracker
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.novack.dance_tracker.core.design_system.theme.Dance_trackerTheme
 import dagger.hilt.android.AndroidEntryPoint
-import dance_tracker.ui.DanceTrackerApp
+import com.novack.dance_tracker.ui.DanceTrackerApp
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
