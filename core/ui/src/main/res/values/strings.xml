@@ -18,4 +18,10 @@
     <string name="GENDER_FEMININE">feminine</string>
     <string name="ONBOARDING_EXPAND_GENDER_SELECTION_CTA_DESCRIPTION">expand gender selection</string>
     <string name="NEXT">Next</string>
+    <string name="NAME">name</string>
+    <string name="LAST_NAME">last name</string>
+    <string name="DOB">date of birth</string>
+    <string name="GENDER">gender</string>
+    <string name="ONBOARDING_USER_INFO_LENGTH_ERROR">must contain between %d and %d characters</string>
+    <string name="ONBOARDING_USER_INFO_CHARACTERS_ERROR">can only contain alphabetical characters and single spaces</string>
 </resources>

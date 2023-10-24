@@ -19,4 +19,10 @@
     <string name="GENDER_FEMININE">femenino</string>
     <string name="ONBOARDING_EXPAND_GENDER_SELECTION_CTA_DESCRIPTION">expandir lista de selección de género</string>
     <string name="NEXT">Siguiente</string>
+    <string name="NAME">nombre</string>
+    <string name="LAST_NAME">apellido</string>
+    <string name="DOB">fecha de nacimiento</string>
+    <string name="GENDER">género</string>
+    <string name="ONBOARDING_USER_INFO_LENGTH_ERROR">debe tener entre %d y %d caracteres</string>
+    <string name="ONBOARDING_USER_INFO_CHARACTERS_ERROR">debe contener solo caracteres alfabéticos y espacios simples</string>
 </resources>

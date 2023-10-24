@@ -8,7 +8,6 @@ class ValidateNameLastNameUseCase @Inject constructor() {
         val result = mutableListOf<DtResult>()
 
         if (nameLastName.length !in 2..14) result.add(DtResult.Error.ErrorLength)
-        if (!containsOnlyAlphabeticalAndSpaces(nameLastName)) result.add(DtResult.Error.ErrorCharacters)
         if (!result.any { it is DtResult.Error }) result.add(DtResult.Success)
 
         return result
@@ -25,7 +24,6 @@ class ValidateNameLastNameUseCase @Inject constructor() {
 
         sealed interface Error : DtResult {
             data object ErrorLength : Error
-            data object ErrorCharacters : Error
         }
     }
 }

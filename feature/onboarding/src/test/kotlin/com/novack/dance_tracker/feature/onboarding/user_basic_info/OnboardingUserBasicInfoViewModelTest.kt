@@ -54,7 +54,7 @@ class OnboardingUserBasicInfoViewModelTest {
         val collectJob = launch(UnconfinedTestDispatcher()){ viewModel.fieldsState.collect() }
         val name = "7&f name"
 
-        every { validateNameLastNameUseCaseMock(name) } returns listOf(ValidateNameLastNameUseCase.DtResult.Error.ErrorCharacters)
+        every { validateNameLastNameUseCaseMock(name) } returns listOf(ValidateNameLastNameUseCase.DtResult.Error.ErrorLength)
 
         viewModel.onEvent(UiEvent.OnNameChange(name))
 
@@ -84,7 +84,7 @@ class OnboardingUserBasicInfoViewModelTest {
         val collectJob = launch(UnconfinedTestDispatcher()){ viewModel.fieldsState.collect() }
         val name = "7&f name"
 
-        every { validateNameLastNameUseCaseMock(name) } returns listOf(ValidateNameLastNameUseCase.DtResult.Error.ErrorCharacters)
+        every { validateNameLastNameUseCaseMock(name) } returns listOf(ValidateNameLastNameUseCase.DtResult.Error.ErrorLength)
 
         viewModel.onEvent(UiEvent.OnLastNameChange(name))
 

@@ -34,28 +34,6 @@ class ValidateNameLastNameUseCaseTest {
     }
 
     @Test
-    fun `given an name with valid length but invalid characters then should return ErrorCharacters`() {
-        val result = useCase("a&fd fd")
-
-        assertEquals(
-            listOf(
-                ValidateNameLastNameUseCase.DtResult.Error.ErrorCharacters
-            ), result
-        )
-    }
-
-    @Test
-    fun `given an name with invalid length and invalid characters then should return ErrorLength, ErrorCharacters`() {
-        val result = useCase("a&fd fd")
-
-        assertEquals(
-            listOf(
-                ValidateNameLastNameUseCase.DtResult.Error.ErrorCharacters
-            ), result
-        )
-    }
-
-    @Test
     fun `given a valid name then should return Success` () {
         val result = useCase("asdfdsf")
 

@@ -33,6 +33,12 @@ class OnboardingUserBasicInfoViewModel @Inject constructor(
     private val _validationsState: MutableStateFlow<ValidationsState> = MutableStateFlow(
         ValidationsState()
     )
+    val validationsState = _validationsState.asStateFlow()
+        .stateIn(
+            scope = viewModelScope,
+            started = SharingStarted.WhileSubscribed(),
+            initialValue = ValidationsState()
+        )
 
     val uiState = _uiState.asStateFlow().combine(_validationsState) { _, validationState ->
         if (validationState.isValid) {
@@ -52,7 +58,12 @@ class OnboardingUserBasicInfoViewModel @Inject constructor(
             is UiEvent.OnLastNameChange -> onLastNameChange(uiEvent.lastName)
             is UiEvent.OnDobChange -> onDoBChange(uiEvent.dob)
             is UiEvent.OnGenderChange -> onGenderChange(uiEvent.gender)
+            is UiEvent.OnValidNextClick -> onValidNextClick()
         }
+    }
+
+    private fun onValidNextClick() = viewModelScope.launch {
+
     }
 
     // TODO this is probably over engineering, if not then this will probably be used in other classes
@@ -168,6 +179,7 @@ sealed interface UiEvent {
     data class OnLastNameChange(val lastName: String) : UiEvent
     data class OnDobChange(val dob: Long?) : UiEvent
     data class OnGenderChange(val gender: Gender) : UiEvent
+    data object OnValidNextClick : UiEvent
 }
 
 data class FieldsState(
